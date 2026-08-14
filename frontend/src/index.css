@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-base: #0a0e1a;
+  --color-surface: #131a2b;
+  --color-elevated: #1b2338;
+  --color-hairline: #252e45;
+  --color-accent: #6c8cff;
+  --color-accent-soft: #a78bfa;
+  --color-ink: #e8eaf0;
+  --color-ink-secondary: #9aa3b8;
+  --color-ink-muted: #6b7488;
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-base);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes dot-pulse {
+  0%, 60%, 100% { opacity: 0.25; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-2px); }
+}
+
+.typing-dot { animation: dot-pulse 1.2s ease-in-out infinite; }

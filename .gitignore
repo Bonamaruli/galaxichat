@@ -1,0 +1,25 @@
+# Python / backend
+backend/venv/
+__pycache__/
+*.pyc
+.env
+backend/data/vectordb/
+*.pkl
+*.joblib
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# Umum
+.DS_Store
+*.log
+
+backend/data/raw/
+backend/data/documents/
+backend/data/chunks.json
+backend/data/vectordb/
+!backend/data/eval_questions.json
+backend/data/sdss/
+backend/data/models/

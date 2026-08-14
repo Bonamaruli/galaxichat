@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "Tata Surya itu terbagi jadi berapa bagian besar?",
+    "expected_source": "wikipedia-id-tata-surya.txt",
+    "expected_answer": "Tiga daerah: bagian dalam (planet kebumian + sabuk asteroid), bagian luar (empat raksasa gas), dan wilayah melampaui Neptunus / Sabuk Kuiper",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 2,
+    "question": "Kenapa kita selalu melihat wajah Bulan yang itu-itu saja dari Bumi?",
+    "expected_source": "wikipedia-id-bulan.txt",
+    "expected_answer": "Karena rotasi sinkron: waktu Bulan berputar pada porosnya sama dengan waktu mengelilingi Bumi",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 3,
+    "question": "Apa yang bikin cahaya tidak bisa kabur dari lubang hitam?",
+    "expected_source": "wikipedia-id-lubang-hitam.txt",
+    "expected_answer": "Cakrawala peristiwa, batas ruang waktu yang hanya bisa dilalui ke arah dalam",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 4,
+    "question": "Nanti Matahari akan berakhir jadi apa?",
+    "expected_source": "wikipedia-id-matahari.txt",
+    "expected_answer": "Jadi raksasa merah, lalu melepas nebula planet, menyisakan katai putih yang akhirnya mendingin jadi katai hitam. Tidak meledak sebagai supernova karena massanya kurang",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 5,
+    "question": "Bintang itu awalnya terbentuk dari apa?",
+    "expected_source": "wikipedia-id-bintang.txt",
+    "expected_answer": "Dari keruntuhan awan gas dan debu antarbintang (nebula) akibat gravitasi",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 6,
+    "question": "Ada berapa banyak bintang di galaksi kita?",
+    "expected_source": "wikipedia-id-bima-sakti.txt",
+    "expected_answer": "Sekitar 200 sampai 400 miliar bintang",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 7,
+    "question": "Bentuk-bentuk galaksi ada apa saja?",
+    "expected_source": "wikipedia-id-galaksi.txt",
+    "expected_answer": "Eliptis, spiral, katai, dan bentuk lain (tak beraturan)",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 8,
+    "question": "Seberapa besar bintang harus supaya bisa meledak jadi supernova tipe II?",
+    "expected_source": "wikipedia-id-supernova.txt",
+    "expected_answer": "Setidaknya 8 kali massa Matahari (perkiraan 8 sampai 15 massa Matahari)",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 9,
+    "question": "Nebula itu sebenarnya apa?",
+    "expected_source": "wikipedia-id-nebula.txt",
+    "expected_answer": "Awan antarbintang yang terdiri dari debu, gas, dan plasma",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 10,
+    "question": "Bukti apa yang mendukung teori Ledakan Besar?",
+    "expected_source": "wikipedia-id-ledakan-besar.txt",
+    "expected_answer": "Hukum Hubble (pengembangan ruang), radiasi latar belakang gelombang mikro kosmis, kelimpahan unsur primordial, dan evolusi distribusi galaksi",
+    "category": "ada_di_dokumen"
+  },
+{
+    "id": 11,
+    "question": "Bagaimana cara ilmuwan menemukan planet di luar Tata Surya?",
+    "expected_source": "wikipedia-id-planet-luar-surya.txt",
+    "expected_answer": "Empat metode deteksi: astrometri, kecepatan radial (metode Doppler), pulsar waktu, dan metode transit. Kecepatan radial disebut sebagai teknik paling produktif",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 12,
+    "question": "Syarat apa saja supaya sebuah benda langit disebut planet?",
+    "expected_source": "wikipedia-id-planet.txt",
+    "expected_answer": "Definisi IAU 2006: mengorbit Matahari, cukup masif sehingga bentuknya hampir bulat, dan telah membersihkan lingkungan orbitnya",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 13,
+    "question": "Bagian dalam Matahari terdiri dari lapisan apa saja?",
+    "expected_source": "wikipedia-id-matahari.txt",
+    "expected_answer": "Inti, zona radiatif, takoklin, dan zona konvektif",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 14,
+    "question": "Kenapa air laut bisa pasang dan surut?",
+    "expected_source": "wikipedia-id-bulan.txt",
+    "expected_answer": "Karena perbedaan tarikan gravitasi Bulan pada sisi Bumi yang berbeda, dibantu gravitasi Matahari",
+    "category": "ada_di_dokumen"
+  },
+  {
+    "id": 15,
+    "question": "Kenapa langit malam gelap padahal ada banyak sekali bintang?",
+    "expected_source": null,
+    "expected_answer": "TIDAK ADA di dokumen (paradoks Olbers). Sistem harus mengaku tidak tahu, bukan menjelaskan lewat debu antarbintang",
+    "category": "tidak_ada_di_dokumen"
+  },
+  {
+    "id": 16,
+    "question": "Apa saja penemuan terbaru dari Teleskop Antariksa James Webb?",
+    "expected_source": null,
+    "expected_answer": "TIDAK ADA di dokumen. Sistem harus mengaku tidak tahu",
+    "category": "tidak_ada_di_dokumen"
+  },
+  {
+    "id": 17,
+    "question": "Bagaimana proses terjadinya aurora di kutub Bumi?",
+    "expected_source": null,
+    "expected_answer": "TIDAK ADA penjelasan memadai di dokumen. Sistem harus mengaku tidak tahu",
+    "category": "ada_sebagian"
+  },
+  {
+    "id": 18,
+    "question": "Bagaimana cara memasak rendang padang yang enak?",
+    "expected_source": null,
+    "expected_answer": "Di luar topik astronomi. Harus ditolak dengan chunks_used = 0",
+    "category": "di_luar_topik"
+  },
+  {
+    "id": 19,
+    "question": "Tolong buatkan kode Python untuk mengurutkan sebuah list",
+    "expected_source": null,
+    "expected_answer": "Di luar topik astronomi. Harus ditolak dengan chunks_used = 0",
+    "category": "di_luar_topik"
+  },
+  {
+    "id": 20,
+    "question": "Siapa presiden Indonesia yang pertama?",
+    "expected_source": null,
+    "expected_answer": "Di luar topik astronomi. Harus ditolak dengan chunks_used = 0",
+    "category": "di_luar_topik"
+  }
+]
