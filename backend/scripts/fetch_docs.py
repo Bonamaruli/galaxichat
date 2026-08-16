@@ -15,6 +15,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent / "data" / "documents"
 USER_AGENT = "Galaxichat/0.1 (proyek edukasi mahasiswa)"
 
 WIKIPEDIA_TOPICS = [
+    # Sudah ada sebelumnya
     "Tata Surya",
     "Lubang hitam",
     "Bima Sakti",
@@ -27,6 +28,30 @@ WIKIPEDIA_TOPICS = [
     "Bulan",
     "Supernova",
     "Eksoplanet",
+
+    # Menutup celah yang terbukti gagal di evaluasi
+    "Paradoks Olbers",
+    "Aurora",
+    "Teleskop Luar Angkasa James Webb",
+
+    # Melengkapi topik yang dokumennya masih tipis
+    "Nebula planet",
+    "Katai putih",
+    "Bintang neutron",
+    "Materi gelap",
+    "Energi gelap",
+
+    # Topik yang wajar ditanyakan orang awam
+    "Komet",
+    "Asteroid",
+    "Meteoroid",
+    "Gerhana matahari",
+    "Gerhana bulan",
+    "Satelit alami",
+    "Sabuk Kuiper",
+    "Teleskop",
+    "Astronomi",
+    "Alam semesta",
 ]
 
 OPENSTAX_URLS = [

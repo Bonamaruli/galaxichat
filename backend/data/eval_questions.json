@@ -100,23 +100,23 @@
   {
     "id": 15,
     "question": "Kenapa langit malam gelap padahal ada banyak sekali bintang?",
-    "expected_source": null,
-    "expected_answer": "TIDAK ADA di dokumen (paradoks Olbers). Sistem harus mengaku tidak tahu, bukan menjelaskan lewat debu antarbintang",
-    "category": "tidak_ada_di_dokumen"
+    "expected_source": "wikipedia-id-paradoks-olbers.txt",
+    "expected_answer": "Paradoks Olbers: ukuran alam semesta teramati yang terbatas, ditambah pemuaian alam semesta dan pergeseran merah yang membuat cahaya awal kini hanya tersisa sebagai radiasi gelombang mikro",
+    "category": "ada_di_dokumen"
   },
   {
     "id": 16,
     "question": "Apa saja penemuan terbaru dari Teleskop Antariksa James Webb?",
-    "expected_source": null,
-    "expected_answer": "TIDAK ADA di dokumen. Sistem harus mengaku tidak tahu",
-    "category": "tidak_ada_di_dokumen"
+    "expected_source": "wikipedia-id-teleskop-luar-angkasa-james-webb.txt",
+    "expected_answer": "Dibahas sebagian: spesifikasi dan tujuan observasinya (spektrum inframerah, pembentukan bintang dan galaksi). Penemuan terbaru tidak tersedia karena artikel ditulis sebelum peluncuran",
+    "category": "ada_sebagian"
   },
   {
     "id": 17,
     "question": "Bagaimana proses terjadinya aurora di kutub Bumi?",
-    "expected_source": null,
-    "expected_answer": "TIDAK ADA penjelasan memadai di dokumen. Sistem harus mengaku tidak tahu",
-    "category": "ada_sebagian"
+    "expected_source": "wikipedia-id-aurora.txt",
+    "expected_answer": "Angin surya membawa plasma yang tertarik ke kutub magnet Bumi, lalu bertumbukan dengan atom oksigen dan nitrogen di atmosfer, menyebabkan eksitasi-relaksasi elektron yang memendarkan cahaya",
+    "category": "ada_di_dokumen"
   },
   {
     "id": 18,
