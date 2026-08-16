@@ -4,6 +4,12 @@ from app.api.chat import router as chat_router
 from app.core.config import settings
 from app.api.classify import router as classify_router
 from fastapi.middleware.cors import CORSMiddleware
+from app.api.auth import router as auth_router
+from app.core.database import Base, engine
+from app.models import user as user_models  # noqa: F401 — agar tabel terdaftar
+from app.api.conversations import router as conversations_router
+
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title=settings.APP_NAME,
@@ -13,6 +19,8 @@ app = FastAPI(
 
 app.include_router(chat_router)
 app.include_router(classify_router)
+app.include_router(auth_router)
+app.include_router(conversations_router)
 
 app.add_middleware(
     CORSMiddleware,

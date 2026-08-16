@@ -13,6 +13,7 @@ export default function ChatPage() {
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
+  const [conversationId, setConversationId] = useState(null)
   const bottomRef = useRef(null)
 
   // Gulir otomatis ke pesan terbaru.
@@ -29,7 +30,10 @@ export default function ChatPage() {
     setLoading(true)
 
     try {
-      const data = await sendChat(text)
+      const data = await sendChat(text, conversationId)
+      if (data.conversation_id) {
+        setConversationId(data.conversation_id)
+      }
       setMessages((prev) => [
         ...prev,
         {

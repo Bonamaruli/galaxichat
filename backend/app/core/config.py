@@ -16,6 +16,12 @@ class Settings:
     LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "gemini")
     GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
     GROQ_MODEL: str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+    JWT_SECRET_KEY: str = os.getenv("JWT_SECRET_KEY", "")
+    JWT_ALGORITHM: str = os.getenv("JWT_ALGORITHM", "HS256")
+    JWT_EXPIRE_HOURS: int = int(os.getenv("JWT_EXPIRE_HOURS", "24"))
+    DATABASE_URL: str = (
+        "sqlite:///" + str(Path(__file__).resolve().parents[2] / "data" / "galaxichat.db")
+    )
 
     # Mengatur seberapa "kreatif" jawaban model.
     TEMPERATURE: float = 0.3

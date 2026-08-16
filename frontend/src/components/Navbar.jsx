@@ -1,4 +1,5 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
 import { OrbitMark } from './Icons'
 
 const links = [
@@ -8,6 +9,14 @@ const links = [
 ]
 
 export default function Navbar() {
+  const { user, signOut } = useAuth()
+  const navigate = useNavigate()
+
+  function handleSignOut() {
+    signOut()
+    navigate('/')
+  }
+
   return (
     <header className="sticky top-0 z-50 h-[72px] shrink-0 border-b border-hairline bg-base/90 backdrop-blur-md">
       <div className="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6">
@@ -33,14 +42,40 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <button className="rounded-lg border border-hairline px-4 py-2 text-sm font-medium text-ink-secondary transition-colors hover:border-ink-muted hover:text-ink">
-            Masuk
-          </button>
-          <button className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-base transition-colors hover:bg-[#7d9aff]">
-            Daftar
-          </button>
-        </div>
+        {user ? (
+          <div className="flex items-center gap-3">
+            <Link
+              to="/account"
+              className="flex items-center gap-2.5 rounded-lg px-2 py-1.5 transition-colors hover:bg-surface"
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-sm font-semibold text-accent">
+                {user.name.charAt(0).toUpperCase()}
+              </span>
+              <span className="hidden text-sm sm:block">{user.name}</span>
+            </Link>
+            <button
+              onClick={handleSignOut}
+              className="rounded-lg border border-hairline px-3 py-2 text-sm text-ink-secondary transition-colors hover:border-ink-muted hover:text-ink"
+            >
+              Keluar
+            </button>
+          </div>
+        ) : (
+          <div className="flex items-center gap-3">
+            <Link
+              to="/login"
+              className="rounded-lg border border-hairline px-4 py-2 text-sm font-medium text-ink-secondary transition-colors hover:border-ink-muted hover:text-ink"
+            >
+              Masuk
+            </Link>
+            <Link
+              to="/register"
+              className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-base transition-colors hover:bg-[#7d9aff]"
+            >
+              Daftar
+            </Link>
+          </div>
+        )}
       </div>
     </header>
   )

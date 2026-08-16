@@ -24,3 +24,4 @@ backend/data/vectordb/
 backend/data/sdss/
 backend/data/models/
 backend/data/instruction_dataset*.jsonl
+backend/data/galaxichat.db
