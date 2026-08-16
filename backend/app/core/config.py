@@ -13,6 +13,9 @@ class Settings:
 
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    LLM_PROVIDER: str = os.getenv("LLM_PROVIDER", "gemini")
+    GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+    GROQ_MODEL: str = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
     # Mengatur seberapa "kreatif" jawaban model.
     TEMPERATURE: float = 0.3
