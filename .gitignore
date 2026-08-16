@@ -23,3 +23,4 @@ backend/data/vectordb/
 !backend/data/eval_questions.json
 backend/data/sdss/
 backend/data/models/
+backend/data/instruction_dataset*.jsonl
